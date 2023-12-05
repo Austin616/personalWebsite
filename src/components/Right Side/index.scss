@@ -1,0 +1,101 @@
+// Home/index.scss
+
+.container.home-page {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 100vh;
+    
+    /* Adjust the margin to move it slightly to the right */
+}
+
+.content-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding-right: 20px;
+    width: 400px;
+    /* Set a fixed width for the container */
+}
+
+.text-zone {
+    width: 100%;
+}
+
+
+
+.right-side-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* Center items horizontally */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #f4f4f4;
+    position: relative;
+    margin-right: 50px;
+    margin-bottom: 40px;
+
+
+h2 {
+        font-size: 25px;
+        margin-bottom: 15px;
+        color:#000000;
+        font-family: 'Coolvetica';
+
+        .text-animate-hover {
+            &:hover {
+                color: #bf5700;
+            }
+        }
+    }
+    /* Glow animation */
+    @keyframes glow {
+            0% {
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1), 0 0 20px rgba(255, 0, 0, 0.8);
+            }
+    
+            25% {
+                box-shadow: 0 0 20px rgba(255, 0, 0, 0.8), 0 0 30px rgba(255, 165, 0, 0.8);
+            }
+    
+            50% {
+                box-shadow: 0 0 20px rgba(255, 165, 0, 0.8), 0 0 30px rgba(255, 255, 0, 0.8);
+            }
+    
+            75% {
+                box-shadow: 0 0 20px rgba(255, 255, 0, 0.8), 0 0 30px rgba(0, 255, 0, 0.8);
+            }
+    
+            100% {
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1), 0 0 20px rgba(0, 0, 255, 0.8);
+            }
+        }
+    
+        animation: glow 6s infinite;
+        /* Adjust the duration as needed */
+    }
+
+.longhorn-symbol {
+    width: 160px;
+    height: 160px;
+    margin-bottom: 15px;
+    align-self: center;
+    /* Center the logo within the container */
+}
+
+  
+
+.other-content {
+    text-align: center;
+    font-size: 18px;
+    line-height: 1.5;
+    color: #333;
+}
+
+p {
+    color: #000000;
+    font: 1em sans-serif;
+}
+
